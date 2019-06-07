@@ -122,4 +122,40 @@
       }
     }
   }
+  
+  .sign-up {
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    .flex();
+    
+    @media @phone {
+      padding: 15px;
+    }
+    
+    h2 {
+      margin-bottom: 10px;
+    }
+    
+    .info {
+      margin-bottom: 26px;
+    }
+    
+    input[type=text] {
+      width: 100%;
+    }
+    
+    input[type=submit] {
+      border: none;
+      .sign-btn(@btn-bg-color, white, 150px, 40px, 1.8rem);
+      
+      @media @phone {
+        width: 100%;
+        height: 70px;
+      }
+    }
+    
+    input[type=submit]:hover {
+      .color-change(@btn-bg-color, white);
+    }
+  }
 }// home

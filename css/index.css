@@ -329,3 +329,58 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .sign-up {
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .sign-up {
+    padding: 15px;
+  }
+}
+.home .sign-up h2 {
+  margin-bottom: 10px;
+}
+.home .sign-up .info {
+  margin-bottom: 26px;
+}
+.home .sign-up input[type=text] {
+  width: 100%;
+}
+.home .sign-up input[type=submit] {
+  border: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #22283A;
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .sign-up input[type=submit] {
+    width: 100%;
+    height: 70px;
+  }
+}
+.home .sign-up input[type=submit]:hover {
+  animation: change 1s infinite alternate;
+}
+@keyframes change {
+  0% {
+    color: white;
+    background: #22283A;
+  }
+  100% {
+    color: #22283A;
+    background: white;
+  }
+}
