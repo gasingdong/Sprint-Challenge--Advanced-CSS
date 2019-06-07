@@ -1,1 +1,39 @@
 // Mixins Here
+
+/*Layout Mixin*/
+
+.flex(@direction:row, @justify:center, @align:center) {
+  display: flex;
+  flex-flow: @direction wrap;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+/*Button Mixin*/
+
+.sign-btn(@bg-color, @color, @width, @height, @font-size: 1.6rem) {
+  .flex();
+  border-radius: 6px;
+  cursor: pointer;
+  background: @bg-color;
+  color: @color;
+  width: @width;
+  height: @height;
+  font-size: @font-size;
+}
+
+/*Animation Mixin*/
+
+.color-change(@start, @finish) {
+  @keyframes change {
+    0% {
+      color: @finish;
+      background: @start;
+    }
+    100% {
+      color: @start;
+      background: @finish;
+    }
+  }
+  animation: change 1s infinite alternate;
+}
