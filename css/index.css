@@ -253,6 +253,19 @@ footer {
   height: 40px;
   font-size: 1.8rem;
 }
+.home .walk .walk-text .btn:hover {
+  animation: change 1s infinite alternate;
+}
+@keyframes change {
+  0% {
+    color: white;
+    background: #22283A;
+  }
+  100% {
+    color: #22283A;
+    background: white;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

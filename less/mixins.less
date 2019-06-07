@@ -17,3 +17,17 @@
   height: @height;
   font-size: @font-size;
 }
+
+.color-change(@start, @finish) {
+  @keyframes change {
+    0% {
+      color: @finish;
+      background: @start;
+    }
+    100% {
+      color: @start;
+      background: @finish;
+    }
+  }
+  animation: change 1s infinite alternate;
+}
