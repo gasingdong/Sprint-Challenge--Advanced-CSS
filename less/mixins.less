@@ -6,3 +6,14 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.sign-btn(@bg-color, @color, @width, @height, @font-size: 1.6rem) {
+  .flex();
+  border-radius: 10px;
+  cursor: pointer;
+  background: @bg-color;
+  color: @color;
+  width: @width;
+  height: @height;
+  font-size: @font-size;
+}
