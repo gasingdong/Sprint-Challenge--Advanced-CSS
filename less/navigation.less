@@ -1,1 +1,23 @@
 // Navigation code here
+.nav-container {
+  background: @wild-sand;
+  border-bottom: 1px solid @sea-shell;
+  padding: 10px 0;
+  .flex(column);
+  
+  .nav-logo {
+    font-size: 4rem;
+  }
+  
+  .nav {
+    width: 400px;
+    padding-top: 15px;
+    .flex(row, space-evenly);
+    
+    .nav-link {
+      font-size: 1.6rem;
+      color: @river-bend;
+      text-decoration: none;
+    }
+  }
+}
